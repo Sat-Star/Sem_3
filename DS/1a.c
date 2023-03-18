@@ -30,7 +30,7 @@ void display()
     if (top >= 0) // if stack is not empty
     {
         printf("The elements of stack are\n");
-        for (i = 0; i <= top; i++)
+        for (i = top; i >= 0; i--)
             printf("%d\n", stack[i]);
     }
     else
