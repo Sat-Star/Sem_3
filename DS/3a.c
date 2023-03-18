@@ -9,7 +9,7 @@ struct node
 };
 typedef struct node *NODE;
 
-insert(NODE first)
+NODE insert(NODE first)
 {
     NODE newnode, pres, prev;
     int pos, count;
