@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #define sz 5
 
-char q[sz];
+char q[sz][1000];
 int f = 0, r = -1, count = 0;
 
 void insert()
@@ -13,9 +13,8 @@ void insert()
     else
     {
         printf("Enter the element\n");
-        scanf("%s", item);
         r = (r + 1) % sz;
-        q[r] = item;
+        scanf("%s", q[r]);
         count++;
     }
 }
