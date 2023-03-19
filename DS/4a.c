@@ -24,7 +24,7 @@ NODE insfront(NODE first)
     printf("Enter the info to newnode\n");
     scanf("%d", &newnode->info);
     newnode->left = NULL;
-    newnode->right = NULL;
+    newnode->right = first;
     first = newnode;
     return first;
 }
