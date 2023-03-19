@@ -1,3 +1,7 @@
+/*Design, develop and execute a program in C to simulate the working of a queue of integers using an array
+ Provide the following operations. a. Insert b. Delete c. Display*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #define sz 5
