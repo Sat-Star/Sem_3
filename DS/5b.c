@@ -1,3 +1,7 @@
+/*Given a String representing a parentheses-free infix arithmetic expression, implement a program to place it in a tree in the infix form.
+Assume that a variable name is a single letter. Traverse the tree to produce an equivalent postfix and prefix expression string.*/
+
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<ctype.h>
