@@ -29,7 +29,8 @@ void delete()
     else
     {
         printf("%s deleted from queue\n", q[f]);
-        f = f + 1;
+        f = (f + 1)%sz;
+        count--;
     }
 }
 
