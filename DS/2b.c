@@ -43,7 +43,7 @@ void display()
     {
         printf("Contents of the queue are\n");
         j = f;
-        for (i = j; i <= count; i++)
+        for (i = 1; i <= count; i++)
         {
             printf("%s\n", q[j]);
             j = (j + 1) % sz;
