@@ -23,7 +23,7 @@ void push()
 void pop()
 {
     if (top <= -1)
-        printf("Stack overflow\n");
+        printf("Stack underflow\n");
     else
         printf("%d deleted\n", stack[top--]);
 }
