@@ -1,3 +1,7 @@
+/*Given a valid parenthesized infix arithmetic expression convert it to postfix expression.
+The expression consists of single character operands and the binary operators + (plus), - (minus), * (multiply) and / (divide).*/
+
+
 #include <stdio.h>
 #include <string.h>
 
