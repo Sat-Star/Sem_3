@@ -47,7 +47,7 @@ NODE insert(NODE first)
         count++;
     }
 
-    if (pres == NULL)
+    if (count!=pos && pres == NULL)
     {
         printf("Invalid pos\n");
         return first;
@@ -58,7 +58,6 @@ NODE insert(NODE first)
     scanf("%d", &newnode->info);
     prev->link = newnode;
     newnode->link = pres;
-    first = newnode;
     return first;
 }
 
