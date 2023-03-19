@@ -1,3 +1,7 @@
+/*Write a program in C to simulate the working of a stack of integers using an array. Provide the following operations.
+a. Insert b. Delete c. Display*/
+
+
 #include <stdio.h>
 // initializing variables
 int stack[100], top = -1, n, choice, x, i;
