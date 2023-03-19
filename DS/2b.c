@@ -1,3 +1,7 @@
+/*Simulate the working of Messaging System in which a message is placed in a circular Queue by a Message Sender,
+a message is removed from the circular queue by a Message Receiver, which can also display the contents of the Queue.*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #define sz 5
