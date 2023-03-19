@@ -1,3 +1,8 @@
+/*In a payroll management system, it is required to store the employee data (Employee ID, Employee name, Login Time) as one logs in to the system.
+At the end of the day, it is required to generate a report of all the employee who logged in that day in ascending order of the Employee ID.
+Develop a program to generate this report.*/
+
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
