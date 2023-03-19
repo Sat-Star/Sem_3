@@ -11,7 +11,6 @@ int f = 0, r = -1, count = 0;
 
 void insert()
 {
-    char item[10];
     if (count == sz)
         printf("Queue overflow\n");
     else
