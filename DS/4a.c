@@ -1,3 +1,10 @@
+/*Design, develop and execute a program in C to implement a doubly linked list where each node consists of integers.
+The program should support the following operations:
+a.Create a doubly linked list by adding each node at the front
+b.Delete the node of a given data If it is found, otherwise display appropriate message
+c.Display the contents of the list.*/
+
+
 #include <stdio.h>
 #include <malloc.h>
 #include <stdlib.h>
