@@ -1,3 +1,7 @@
+/*Design a doubly linked list to represent sparse matrix. Each node in the list can have the row and column index of the matrix element and the value of the element.
+Print the complete matrix as the output.*/
+
+
 #include <stdio.h>
 #include <malloc.h>
 #include <stdlib.h>
