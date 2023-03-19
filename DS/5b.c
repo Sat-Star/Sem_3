@@ -3,6 +3,7 @@ Assume that a variable name is a single letter. Traverse the tree to produce an 
 
 
 #include<stdio.h>
+#include<malloc.h>
 #include<stdlib.h>
 #include<ctype.h>
 
