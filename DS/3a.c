@@ -72,8 +72,8 @@ NODE delete(NODE first)
         printf("%d is deleted\n", temp->info);
         first = first->link;
         free(temp);
-        return first;
     }
+    return first;
 }
 
 void display(NODE first)
