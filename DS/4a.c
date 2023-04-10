@@ -23,8 +23,16 @@ NODE insfront(NODE first)
     newnode = (NODE)malloc(sizeof(struct node));
     printf("Enter the info to newnode\n");
     scanf("%d", &newnode->info);
+
+    if (first == NULL) //added in latest commit
+    {
+        newnode->left = newnode->right = NULL;
+        first = newnode;
+        return first;
+    }
     newnode->left = NULL;
     newnode->right = first;
+    first->left = newnode;
     first = newnode;
     return first;
 }
@@ -41,7 +49,7 @@ NODE delinfo(NODE first)
     printf("Enter the info to be deleted\n");
     scanf("%d", &key);
 
-    if (key == first->info)
+    if (first->info == key)
     {
         pres = first;
         first = first->right;
@@ -50,7 +58,7 @@ NODE delinfo(NODE first)
     }
 
     pres = first;
-    while (pres != NULL && key != pres->info)
+    while (pres != NULL && pres->info != key)
     {
         prev = pres;
         pres = pres->right;
@@ -63,6 +71,12 @@ NODE delinfo(NODE first)
     }
     else
     {
+        if (pres->right == NULL) //added in latest commit
+        {
+            prev->right = NULL;
+            free(pres);
+            return first;
+        }
         prev->right = pres->right;
         pres->right->left = prev;
         free(pres);
